@@ -3,7 +3,8 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-bottom: 100px;
+    padding-bottom: 100px;    
+    background-color: #121212;
     gap: 50px;
 }
 .hero{
@@ -77,11 +78,11 @@
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 28px;
+        gap: 28px 16px;
         .card{
-            padding: 20px;
+            padding: 15px;
             display: flex;
-            max-width: 216px;
+            max-width: 180px;
             flex-direction: column;
             align-items: flex-start;
             border-radius: 8px;
@@ -103,7 +104,7 @@
             }
             p{
                 color: #7d7d7d;
-                font-size: 18px;
+                font-size: 16px;
                 line-height: 23px;
                 height: 52px;
             }
