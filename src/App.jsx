@@ -4,13 +4,10 @@ import Home from "./router/home/Home";
 import Like from "./router/like/Like";
 import PlayList from "./router/playlest/PlayList";
 import NotFound from "./router/notfound/NotFound";
-import { Provider } from "react-redux";
 import Menu from "./components/menu/Menu";
-import store from "./app/store";
 
 const App = () => {
   return (
-    <Provider store={store}>
       <Router>
         <div className="body">
           <Header />
@@ -23,7 +20,6 @@ const App = () => {
           <Menu />
         </div>
       </Router>
-    </Provider>
   );
 };
 

@@ -1,12 +1,21 @@
 import React from "react";
 import Hero from "./Hero";
+import Mixes from "./Mixes";
+import Mode from "./Mode";
+import Recentle from "./Recentle";
+import Jomp from "./Jomp";
+import Uniquely from "./Uniquely";
 
 const Home = () => {
   return (
-    <div className="main">
+    <main className="main">
       <Hero />
-      
-    </div>
+      <Mixes />
+      <Mode />
+      <Recentle />
+      <Jomp />
+      <Uniquely />
+    </main>
   );
 };
 
