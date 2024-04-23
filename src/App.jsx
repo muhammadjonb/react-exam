@@ -14,7 +14,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/like" element={<Like />} />
-            <Route path="/playlist" element={<PlayList />} />
+            <Route path="/playlist/:id" element={<PlayList />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Menu />

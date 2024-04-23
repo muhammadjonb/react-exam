@@ -33,8 +33,11 @@
         flex-wrap: wrap;
         gap: 30px;
     }
-    &_card{
-        max-width: 42%;
+    a{
+        max-width: 45%;
+        color: #fff;
+    }
+    a, &_card{
         width: 100%;
         background-color: rgba(255, 255, 255, 0.1);
         display: flex;
@@ -43,6 +46,9 @@
         overflow: hidden;
         cursor: pointer;
         gap: 20px;
+        h3{
+            font-size: 17px;
+        }
     }
 }
 

@@ -1,0 +1,21 @@
+td{
+    font-size: 14px;
+}
+.liked{
+    display: none;
+    color: #63CF6C;
+}
+.table_lek{
+    display: none;
+    &:checked ~ label > .dislike{
+        display: none;
+    }
+    &:checked ~ label > .liked{
+        display: block;
+    }
+}
+label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

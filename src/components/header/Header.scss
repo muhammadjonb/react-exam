@@ -46,6 +46,9 @@ header{
     }
     &_kotolog{
         padding: 30px 0;
+        ul{
+            padding: 0;
+        }
         li{
             color: #ccc;
             list-style: none;

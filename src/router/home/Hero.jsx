@@ -1,6 +1,7 @@
 import "./Home.scss";
 import { useEffect } from "react";
 import { usePlayStore } from "../../app/gatPlayLists";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const { loading, mixes, error, getPlaylists, getToken } = usePlayStore();
@@ -18,10 +19,12 @@ const Hero = () => {
       {mixes.length > 0 && (
         <div className="hero_cards">
           {mixes.map((mix) => (
-            <div className="hero_card" key={mix.id}>
-              <img src={mix.images[0].url} alt={mix.name} />
-              <h3>{mix.name}</h3>
-            </div>
+            <Link to={`/playlist/${mix.id}`} key={mix.id}>
+              <div className="hero_card">
+                <img src={mix.images[0].url} alt={mix.name} />
+                <h3>{mix.name}</h3>
+              </div>
+            </Link>
           ))}
         </div>
       )}
