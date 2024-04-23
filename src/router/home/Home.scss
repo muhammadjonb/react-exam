@@ -1,0 +1,37 @@
+.main{
+    width: 100%;
+}
+.hero{
+    width: 100%;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: #3333A3;
+    background: linear-gradient(180deg, #3333A3 10%, #121212 80%);
+    gap: 32px;
+    h1{
+        font-size: 39px;
+        line-height: 49px;
+        color: #fff;
+    }
+    &_cards{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &_card{
+        max-width: 47%;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        border-radius: 6px;
+        overflow: hidden;
+        gap: 20px;
+    }
+}

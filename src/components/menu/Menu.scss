@@ -1,0 +1,71 @@
+.menu{
+    max-width: 340px;
+    background-color: #000;
+    min-height: 100vh;
+    padding: 30px 20px;
+    height: 100%;
+    width: 100%;
+    &_activ{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 28px;
+        &_top{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h4{
+                color: #ccc;
+                font-size: 20px;
+                line-height: 25px;
+                letter-spacing: 1%;
+            }
+            &_icons{
+                display: flex;
+                color: #B3B3B3;
+                align-items: center;
+                gap: 8px;
+            }
+            &_person{
+                width: 24px;
+                height: 24px;
+                color: #B3B3B3;
+            }
+            &_clase{
+                width: 28px;
+                height: 28px;
+                cursor: pointer;
+                color: #B3B3B3;
+            }
+        }
+        &_center{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 20px;
+            img{
+                max-width: 180px;
+                width: 100%;
+            }
+        }
+        p{
+            color: #ccc;
+            font-size: 17px;
+            line-height: 25px;
+            font-weight: 450;
+        }
+        button{
+            font-size: 20px;
+            padding: 20px 60px;
+            align-self: center;
+            text-transform: uppercase;
+            border: 1px solid #fff;
+            letter-spacing: 3px;
+            border-radius: 40px;
+            line-height: 25px;
+            color: #171717;
+            font-weight: 700;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.notfound{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    h1{
+        font-size: 60px;
+        color: #ffffffce;
+    }
+    h3{
+        font-size: 28px;
+        font-weight: 400;
+        color: #ffffffce;
+    }
+    button{
+        padding: 15px 30px;
+        border-radius: 8px;        
+        border: 1px solid #63CF6C;
+        background-color: #63CF6C;
+        &:hover{
+            box-shadow: 0 0 0 5px #9ceba360;
+        }
+        a{
+            color: #000000;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+}

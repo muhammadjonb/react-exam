@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif !important;
+}
+body{
+    overflow-x: hidden;
+    background-color: #121212;
+}
+.body{
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+input{
+    outline: none;
+}
+button{
+    transition: all 0.3s;
+    cursor: pointer;
+}
