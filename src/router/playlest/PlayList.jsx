@@ -51,6 +51,7 @@ const PlayList = () => {
     openPlayList();
   }, []);
 
+  console.log(music);
   return (
     <div className="main">
       <Table variant="dark" hover>
@@ -104,7 +105,9 @@ const PlayList = () => {
                   ? list.track.album.name
                   : list.track.album.name.slice(0, 25) + "..."}
               </td>
-              <td></td>
+              <td>
+                <audio src={list.track.preview_url} controls className="audio"></audio>
+              </td>
               <td>
                 {"0" +
                   Math.floor(list.track.duration_ms / 60000) +

@@ -4,6 +4,12 @@ td{
 .liked{
     display: none;
     color: #63CF6C;
+    width: 24px;
+    height: 24px;
+}
+.dislike{
+    width: 24px;
+    height: 24px;
 }
 .table_lek{
     display: none;
@@ -18,4 +24,8 @@ label{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.audio{
+    width: 280px;
 }
