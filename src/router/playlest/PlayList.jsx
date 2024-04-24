@@ -8,6 +8,7 @@ import "./PlayList.scss";
 const PlayList = () => {
   // const { playlist, getToken, openPlayList } = usePlaylistStore();
   const [music, setMusic] = useState([]);
+  const [music1, setMusic1] = useState([]);
   const { id } = useParams();
 
   const clientId = "6d2b896ad23f4e8b8ae01797378c0e0c";
@@ -43,6 +44,7 @@ const PlayList = () => {
       });
       const data = await res.json();
       setMusic(data.tracks.items);
+      setMusic1(data)
     } catch (error) {}
   };
 
@@ -51,9 +53,16 @@ const PlayList = () => {
     openPlayList();
   }, []);
 
-  console.log(music);
+  console.log(music1);
   return (
     <div className="main">
+      <div className="hero_play">
+        <div className="hero_play_top">
+          <span>PUBLIC PLAYLIST</span>
+          <h1>{music1.name}</h1>
+          <p>{music1.description}</p>
+        </div>
+      </div>
       <Table variant="dark" hover>
         <thead>
           <tr>
@@ -106,7 +115,11 @@ const PlayList = () => {
                   : list.track.album.name.slice(0, 25) + "..."}
               </td>
               <td>
-                <audio src={list.track.preview_url} controls className="audio"></audio>
+                <audio
+                  src={list.track.preview_url}
+                  controls
+                  className="audio"
+                ></audio>
               </td>
               <td>
                 {"0" +
